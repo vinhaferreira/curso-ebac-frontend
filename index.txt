@@ -1,0 +1,16 @@
+let base = prompt ("digite sua base:")
+
+
+
+let altura = prompt ("digite sua altura:")
+
+
+
+function calculaArea(){
+
+  let multiplicacao = base*altura
+
+  return multiplicacao
+
+}
+
