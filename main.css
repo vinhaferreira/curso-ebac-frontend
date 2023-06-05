@@ -1,0 +1,36 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #c8d6e5;
+  padding: 24px 0;
+  text-align: center;
+  margin: 0px auto;
+  padding-top: 30vh;
+}
+h1 {
+  margin-bottom: 16px;
+}
+
+button {
+  background-color: #7f76b6;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+background-color: red;
+li {
+  list-style-position: inside;
+  list-style-type: square;
+  padding-top: 20px;
+}
+li:hover {
+  cursor: pointer;
+}
