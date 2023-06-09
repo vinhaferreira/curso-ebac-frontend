@@ -17,7 +17,7 @@
 
 <body>
   <header>
-    <div class="container">
+    <div class="container container-flex">
       <h1>EBAC Motors</h1>
       <div class="menu-hamburguer">
         <span></span>
@@ -44,11 +44,28 @@
       </div>
     </nav>
   </header>
-  <div id="caroussel-imagens">
+  <div id="carousel-imagens">
     <img src="/images/slide1.png" alt="Carro da porsche">
     <img src="/images/slide2.png" alt="Carro da BMW">
     <img src="/images/slide3.png" alt="Carro da Ford">
   </div>
+  <section id="sobre-a-loja">
+    <div class="container container-flex">
+      <img src="/images/loja.jpg" alt="Imagem da Loja EBAC Motors">
+      <h2>Sobre a EBAC Motors</h2>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab voluptates, voluptatem beatae maiores porro veritatis corrupti molestiae veniam nostrum id autem. Accusantium delectus sit, odio vel eos vero sunt tempore.</p>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab voluptates, voluptatem beatae maiores porro veritatis corrupti molestiae veniam nostrum id autem. Accusantium delectus sit, odio vel eos vero sunt tempore.</p>
+    </div>
+  </section>
+  <section>
+    <div class="container">
+      <h2>Em destaque</h2>
+      <ul class="container-flex">
+        <li></li>
+      </ul>
+    </div>
+  </section>
+
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
@@ -57,7 +74,10 @@
       $('#caroussel-imagens').slick({
         autoplay: true,
       });
-    })
+      $('.menu-hamburguer').click(function () {
+        $('nav').slideToggle();
+      });
+    });
   </script>
 
 </body>

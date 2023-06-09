@@ -4,6 +4,9 @@
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
+html {
+  overflow-x: hidden;
+}
 .container {
   max-width: 1024px;
   width: 100%;
@@ -16,7 +19,6 @@ header {
   color: #fff;
 }
 header > .container {
-  display: flex;
   justify-content: space-between;
   align-items: center;
   padding-bottom: 16px;
@@ -24,6 +26,7 @@ header > .container {
 nav {
   background-color: #575fcf;
   padding: 16px 0;
+  display: none;
 }
 nav li {
   list-style: none;
@@ -39,6 +42,7 @@ nav li a {
 }
 .menu-hamburguer {
   width: 32px;
+  cursor: pointer;
 }
 .menu-hamburguer span {
   height: 2px;
@@ -46,4 +50,17 @@ nav li a {
   background-color: #fff;
   display: block;
   margin-bottom: 4px;
+}
+.container-flex {
+  display: flex;
+}
+#sobre-a-loja img {
+  max-width: 400px;
+  margin-right: 24px;
+}
+section {
+  padding: 48px 0;
+}
+section h2 {
+  margin-bottom: 16px;
 }
